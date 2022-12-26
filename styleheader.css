@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/* Variaveis*/
+
+:root {
+    --main-color: white;
+    --bg-color: black; 
+}
+
+.cabeca{
+    background: var(--bg-color);
+}
+
+.nav-button{
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+    background: #000;
+}
+
+.nav-button i {
+    color: var(--main-color);
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+   background-color: var(--bg-color);
+   z-index: 9;
+   position: fixed;
+   left: 0;
+   top: 0;
+   overflow-x: hidden;
+   transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: var(--main-color);
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: var(--main-color);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 30px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px;}
+    .overlay, .closebtn{
+        font-size: 40px;
+        top: 35px;
+        right: 35px;
+    }
+}
+
+.limk:nth-child(1)::before{
+    background: #eca624;
+}
+.limk:nth-child(2)::before{
+    background: #1da1f2;
+}
+.limk:nth-child(3)::before{
+    background: #284c6f;
+}
+.link i {
+    font-size: 1.7em;
+    transition: all 0.6s;
+    color: var(--main-color);
+    background: #000000;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 4px;
+}
+.link:hover i {
+    color: #fff;
+    transform: rotate(-15deg);
+}
+.link:hover i.linkedin {
+    color: #1da1f2;
+}
+.link:hover i.instagram {
+    color: #ad24ec;
+}
+.link:hover i.facebook {
+    color: #0a66c2;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.menutext {
+    margin-bottom: 5%;
+    font-family: "Andale Mono","AndaleMono",monospace;
+}
+
+.maintitle {
+    color:  var(--main-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Andale Mono","AndaleMono",monospace;
+    margin-top: -1.5%;
+}
+
+
+
+
+
